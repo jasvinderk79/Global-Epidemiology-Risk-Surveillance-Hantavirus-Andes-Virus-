@@ -1,28 +1,23 @@
-# 🦠 Global Epidemiology & Risk Analytics: Hantavirus (Andes Virus)
+# Global Epidemiology & Risk Surveillance — Hantavirus / Andes Virus
 
-## 📌 Executive Summary
-This project delivers an end-to-end healthcare and epidemiological analytics pipeline focusing on **Hantavirus (Andes Virus)**—the primary hantavirus strain capable of human-to-human transmission. The project combines data engineering, automated data cleaning, predictive risk modeling, and interactive visual intelligence.
+End-to-end health analytics pipeline that merges multi-source clinical and registry data to predict patient mortality risk and visualize outbreak patterns.
 
----
+## Problem
+Public health responders needed a way to combine multi-source clinical and registry data on Hantavirus/Andes Virus cases to identify which patients were at highest mortality risk, and to understand outbreak patterns geographically.
 
-## 🛠️ Tech Stack & Architecture
-* **Data Engineering & ETL:** Python (`pandas`, `duckdb`, `os`)
-* **Machine Learning:** `scikit-learn` (Random Forest Classifier for mortality & ICU admission risk prediction)
-* **Visual Analytics:** Tableau Public (Interactive Dashboard)
-* **Development Environment:** PyCharm Professional
+## What this project does
+- Built an end-to-end **Python / DuckDB / SQL** pipeline to clean and merge multi-source clinical and registry datasets, with automated type-casting and missing-value imputation
+- Trained a **Random Forest Classifier** (Scikit-Learn) to predict patient mortality risk — ICU admission and mechanical ventilation emerged as the strongest clinical risk drivers
+- Built a **3-view interactive Tableau dashboard**: a choropleth outbreak map, a demographic risk breakdown, and a clinical severity matrix, designed for executive-level reporting
 
----
+## Tools & Stack
+Python · Pandas · DuckDB · SQL · Scikit-Learn · Tableau
 
-## 📊 Key Insights & Analytical Outcomes
-* **Demographic Risk Factors:** Identified highest mortality rates among specific age brackets and comorbidity categories.
-* **Clinical Severity Indicators:** Analyzed the proportion of confirmed cases requiring ICU admission and mechanical ventilation.
-* **Spatial Distribution:** Mapped global outbreak intensity across WHO regions.
+## Dashboard
+🔗 [View the live Tableau dashboard](https://public.tableau.com/app/profile/jasvinder.kaur8501/vizzes) *(link to the specific viz once published)*
 
----
+## Outcome
+A reusable pipeline and dashboard that turns raw multi-source health data into a clear, risk-ranked view that decision-makers can act on directly, without needing to touch the underlying data themselves.
 
-## 📈 Interactive Dashboard
-👉 **[Click Here to View Live Interactive Tableau Dashboard](https://public.tableau.com/views/GlobalEpidemiologyRiskSurveillanceHantavirusAndesVirus/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
-
----
-
-## 📂 Repository Structure
+## Author
+Jasvinder Kaur — [LinkedIn](https://www.linkedin.com/in/jasvinder-kaur-406b13285/) · [Kaggle](https://www.kaggle.com/jasvinderkaur13)
